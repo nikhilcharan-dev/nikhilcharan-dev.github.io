@@ -135,7 +135,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 0;
+            z-index: -1; /* Changed z-index to -1 */
             pointer-events: none;
             transition: opacity 0.3s ease;
         }
@@ -172,7 +172,7 @@
                 background-position: center;
             }
             .bg-motion {
-                animation: bgAnimation 10s infinite alternate;
+                animation: none; /* Disable animation for mobile */
             }
         }
     </style>
