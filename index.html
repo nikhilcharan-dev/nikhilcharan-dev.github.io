@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            position: relative;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            /* background set to transparent*/
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            transition: background-color 0.3s ease;
+            overflow: hidden; /* Ensuring floated elements don't escape the container */
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+            animation: floatAnimation 5s infinite alternate; /* Continuous floating animation */
+        }
+
+        .section li strong {
+            display: inline-block;
+            width: 120px;
+        }
+
+        .bg-motion {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+        }
+
+        .container:hover .bg-motion {
+            opacity: 0;
+        }
+
+        @keyframes bgAnimation {
+            0% { transform: translateY(-10px); }
+            50% { transform: translateY(10px); }
+            100% { transform: translateY(-10px); }
+        }
+
+        .bg-motion {
+            animation: bgAnimation 10s infinite alternate;
+        }
+
+        @keyframes floatAnimation {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://wallpapercave.com/wp/wp6340540.jpg" alt="Background" class="bg-motion">
+
+    <div class="container">
+        <header>
+            <h1>NIKHIL CHARAN</h1>
+            <p>OTAKU</p>
+        </header>
+        
+        <section class="section">
+            <h2>About Me</h2>
+            <p>Exploring the realm of Computer Science</p>
+        </section>
+        
+        <section class="section">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>NULL</strong>
+                    <span>NULL<!--companyName--></span>
+                <!--    <span>2024 - Present</span> -->
+                </li>
+                <li>
+                    <strong>Intern</strong>
+                    <span>TechnicalHub</span>
+                    <span>2025 - 2027</span>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <h4 align="center">Bachelor of Science in Information Technology</h4>
+                    <span>ㅤㅤAditya Engineering Collegeㅤㅤ</span>
+                    <span>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</span>
+                    <span>2024 - 2027</span>
+                </li>
+                <li>
+                    <span>ㅤㅤAditya Junior Collegeㅤㅤ</span>
+                    <span>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤﾠㅤﾠﾠ</span>
+                    <span>2020 - 2022</span>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>C, C++, Golang</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li></li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2>Contact</h2>
+            <span>Email: chintufru143@gmail.com</span><br><br>
+            <span>Phone: +91 7815873262</span>
+        </section>
+    </div>
+</body>
+</html>
