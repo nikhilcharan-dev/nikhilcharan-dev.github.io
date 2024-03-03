@@ -94,14 +94,21 @@
         }
 
         @media (max-width: 786px) {
-            /* Mobile Devices */
-            body {
-                background-image: url('https://w0.peakpx.com/wallpaper/920/275/HD-wallpaper-aesthetic-sky-cloud-clouds-peace.jpg');
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-            }
+         /* Mobile Devices */
+        body {
+            background-image: none; /* Remove background image from body */
         }
+        .container {
+            background-image: url('https://w0.peakpx.com/wallpaper/920/275/HD-wallpaper-aesthetic-sky-cloud-clouds-peace.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-motion {
+            animation: bgAnimation 10s infinite alternate;
+        }
+        }
+    
 
     </style>
 </head>
