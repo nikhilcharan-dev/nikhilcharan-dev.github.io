@@ -8,11 +8,13 @@ body {
 }
 
 .container {
+    font-family: Arial, sans-serif;
     position: relative;
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: bolder;
     z-index: 0;
     transition: background-color 0.3s ease;
     overflow: hidden; 
@@ -63,6 +65,7 @@ p {
     z-index: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
+    /* opacity: 0.65; */
 }
 
 .container:hover .bg-motion {
