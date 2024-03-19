@@ -1,4 +1,4 @@
-4## GitHub Pages
+## GitHub Pages
 
 Portfolio using HTML and CSS
 
