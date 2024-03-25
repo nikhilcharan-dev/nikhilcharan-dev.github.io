@@ -107,8 +107,10 @@ p {
     }
 }
 
-
-    /* CSS for the floating effect */
+.fas fa-fire {
+    position: relative;
+    
+}
 .floating-icon {
     position: fixed;
     bottom: 20px; /* Adjust as needed */
