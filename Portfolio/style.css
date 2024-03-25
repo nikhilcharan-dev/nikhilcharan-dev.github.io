@@ -107,14 +107,14 @@ p {
     }
 }
 
-.fas fa-fire {
-    position: relative;
-    
+.fa.fa-fire {
+    font-size: 50px;
+    color: red !important;
 }
-.floating-icon {
-    position: fixed;
-    bottom: 20px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
+
+/* .floating-icon {
+    bottom: 20px;
+    right: 20px;
     animation: floatAnimation 3s infinite ease-in-out;
 }
 
@@ -122,4 +122,4 @@ p {
     0% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
-}
+} */
