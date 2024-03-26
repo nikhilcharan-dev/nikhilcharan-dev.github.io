@@ -1,5 +1,4 @@
 ## GitHub Pages
 
-Portfolio using HTML and CSS
-
-[Click here for my website](https://nikhil1qwer.github.io./Portfolio/)
+Portfolio:
+[Click here for visit my website](https://nikhil1qwer.github.io./Portfolio/)
