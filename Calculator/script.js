@@ -8,6 +8,16 @@ function flush() {
     screen.value = '';
 }
 
+function del() {
+    var value = screen.value;
+    if(value.length < 2) {
+        flush();
+    } else {
+        var newValue = value.substring(0, value.length - 1);
+        screen.value = newValue;
+    }
+}
+
 function compute() {
     var expression = screen.value.trim();
     var result;
