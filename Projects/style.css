@@ -41,6 +41,10 @@ main {
     background-color: #0056b3;
 }
 
+p {
+    font-size: large;
+}
+
 a {
     text-align: center;
 }
