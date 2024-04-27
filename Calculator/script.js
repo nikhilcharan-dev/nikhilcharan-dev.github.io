@@ -35,6 +35,7 @@ function compute() {
 function joyboy() {
     sound = document.getElementById('sfx');
     sound.play();
+    window.alert("Unlocked Easter Egg!!");
 }
 
 // stars
