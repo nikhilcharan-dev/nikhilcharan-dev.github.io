@@ -87,6 +87,7 @@ h1 {
     border-radius: 50%;
     transition: left 1s ease, top 1s ease;
     animation: floatAnimation 5s infinite alternate ease-in-out;
+    z-index: -1;
 }
 
 @keyframes floatAnimation {
