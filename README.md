@@ -1,4 +1,4 @@
 ## GitHub Pages
 
 Portfolio:
-[Click here for visit my website](https://nikhil1qwer.github.io./Portfolio/)
+<a alt="_blank" href="https://nikhil1qwer.github.io./Portfolio/">Click here for visit my website</a>
