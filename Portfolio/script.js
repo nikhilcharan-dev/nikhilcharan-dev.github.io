@@ -25,6 +25,9 @@ const updateStarColors = () => {
 
   }
 
+  updateStarColors();
+
+
 const toggleButton = document.querySelector('#toggle-btn');
 const currentTheme = localStorage.getItem('theme') || 'light';
 

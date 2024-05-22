@@ -63,7 +63,6 @@ h4 { text-align: center; font-weight: bold; }
 
 .link {
     text-decoration: none;
-    color: rgb(0, 0, 0);
     transition: color 1.0s;
 }
 
