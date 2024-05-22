@@ -5,25 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <link rel="icon" href="https://img.icons8.com/?size=512&id=yydb76lTrba9&format=png" type="image/x-icon"> <!--favi con-->
+    <link rel="icon" href="https://logopond.com/logos/02ef73691442627461ae3c3b3f98eb06.png" type="image/x-icon"> <!--favi con-->
     <link rel="stylesheet" href="style.css" type="text/css" >
     <title>Portfolio</title> 
-
 </head>
 <body>
-    
-    <img src = "https://wallpapercave.com/wp/wp6340540.jpg" alt = "Background" class = "bg-motion">
-    <audio src="Template.mp3" autoplay loop></audio>
+     
+    <div id="stars"></div>
+    <audio id="audio" src="Template.mp3" loop></audio>
+
     <div class="container">
 
-        <header class="container">
+        <header class="container" style="position: sticky; backface-visibility: hidden;">
             <h1>NIKHIL CHARAN</h1>
+            <button id="toggle-btn" class="sun">☀️</button>
             <h3> OTAKU </h3>
         </header>
 
         <section class="section">
             <h2>About Me</h2> <br>
-            <p>Curious mind, Coding enthusiast, and Problem solver – that's me.</p>
+            <span>Curious mind, Coding enthusiast, and Problem solver - that's me.</span>
         </section>
         
         <section class="section">
@@ -34,11 +35,11 @@
                     <span>NULL(companyName)</span>
                     <span>2024 - Present</span>
                 </li> -->
-                <li>
+                <!-- <li>
                     <strong>Intern</strong>
                     <span>TechnicalHub</span>
                     <span>2025 - 2027</span>
-                </li>
+                </li> -->
             </ul>
         </section>
         
@@ -61,13 +62,15 @@
 
         <section class="section">
             <h2>Projects: </h2>
-            <a href="https://nikhil1qwer.github.io/Projects/" target="_blank" class="link"> <p class="P">Dive into my Projects</p></a>
-            <p class="note">(Click anywhere under this section)</p>
+                <a href="https://nikhil1qwer.github.io/Projects/" class="link"> 
+                <p class="P">Dive into my Projects</p>
+                <p class="note">(Click anywhere under this section)</p>
+               </a>
         </section>
 
         <section class="section">
             <h2>Skills</h2>
-            <ul>
+            <ul class="skills">
                 <li>C & C++</li>
                 <li>HTML5</li>
                 <li>CSS3</li>
@@ -85,6 +88,6 @@
             <span>Phone: +91 7815873262</span>
         </section>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

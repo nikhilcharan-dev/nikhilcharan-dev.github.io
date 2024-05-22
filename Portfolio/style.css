@@ -1,47 +1,25 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    background-repeat: no-repeat;
-    background-size: cover;
+    transition: background-color 1.0s, color 1.0s;
 }
 
-h1 {
-    text-align: center;
-    color: #000000;
-}
-
-h3 {
-    text-align: left;
-    color: #121010;
-}
-
-h4 {
-    text-align: center;
-    font-weight: bold;
-}
+h1 { text-align: center; }
+h3 { text-align: left; }
+h4 { text-align: center; font-weight: bold; }
 
 .P {
     padding: 50px 0px 0px 0px;
     line-height: 1.6px;
-    color: #000000;
     text-align: center;
     font-weight: bold;
 }
 
 .note {
-    color:#272424;
     font-size: x-small;
-    text-align: right;
+    font-weight: bold;
+    text-align: center;
     text-decoration: wavy;
     padding: 0 0 0 0;
-}
-
-i {
-    color: red;
-    font-size: 25px;
-    margin-left: 350px;
 }
 
 .container {
@@ -50,18 +28,13 @@ i {
     margin: 20px auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 0;
+    z-index: 1;
     transition: background-color 0.3s ease;
     overflow: hidden; 
     animation: floatAnimation 5s infinite alternate; /* animation added */
 }
 
-.section {
-    margin-bottom: 25px;
-}
-
 .section h2 {
-    color: #272424;
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
     margin-bottom: 10px;
@@ -74,7 +47,6 @@ i {
 
 .section li {
     text-align: center;
-    font-size: large;
     margin-bottom: 10px;
 }
 
@@ -83,51 +55,81 @@ i {
     width: 120px;
 }
 
-.bg-motion {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-}
-
-.container:hover .bg-motion {
-    opacity: 0.5;
-}
-
-@keyframes bgAnimation {
-    0% { transform: translateY(-10px); }
-    50% { transform: translateY(10px); }
-    100% { transform: translateY(-10px); }
-}
-
-.bg-motion {
-    animation: bgAnimation 10s infinite alternate;
-}
-
 @keyframes floatAnimation {
     0% { transform: translateY(0); }
     50% { transform: translateY(-5px); }
     100% { transform: translateY(0); }
 }
 
-@media only screen and (max-width: 431px) {
-    /* Mobile Devices */
-    .bg-motion {
-        display: none;
-    }
-    body {
-        background-image: url('https://wallpaperaccess.com/full/200376.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-}
-
-
 .link {
     text-decoration: none;
+    color: white;
+    transition: color 1.0s;
 }
+
+#toggle-btn {
+    float: right;
+    font-size: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 999;
+}
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+#toggle-btn.moon {
+    display: inline;
+}
+
+#toggle-btn.sun {
+    display: inline;
+}
+
+#stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .star, .asteriod {
+    position: absolute;
+    background-color: #000000;
+    border-radius: 50%;
+    animation: twinkle 1s infinite alternate, move 10s infinite linear;
+  }
+
+  @keyframes twinkle {
+    from {
+        opacity: 0.8;
+    }
+    to {
+        opacity: 1; 
+    }
+  }
+  
+  @keyframes move {
+    0% { 
+      transform: translate(0, 0); 
+      opacity: 1;
+    }
+    50% { 
+      opacity: 0.5; 
+    }
+    100% { 
+      transform: translate(calc(100vw - 100%), -100vh); 
+      opacity: 0;
+    }
+  }
+  
+  
