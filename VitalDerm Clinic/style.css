@@ -1,10 +1,11 @@
+/* General styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* navbar */
+/* Navbar styling */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -14,10 +15,32 @@ body {
     font-size: 1.3rem;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 75px;
+    margin-right: 10px;
+    border-radius: 60%;
+}
+
+.navbar .clinic-info {
+    display: flex;
+    flex-direction: column;
+}
+
 .logo a {
     color: #ffffff;
     font-size: 1.8rem;
     text-decoration: none;
+}
+
+.navbar .tagline {
+    padding-left: 30px;
+    color: #fff;
+    font-size: 12px;
 }
 
 .nav-links {
@@ -40,10 +63,7 @@ body {
     text-decoration: underline;
 }
 
-/* end */
-
-/* intro */
-
+/* Intro section styling */
 .intro-section {
     display: flex;
     justify-content: space-between;
@@ -71,9 +91,7 @@ body {
     height: auto;
 }
 
-/* end  */
-
-/* services */
+/* Services section styling */
 .services-section {
     display: flex;
     justify-content: space-around;
@@ -98,15 +116,13 @@ body {
     color: #666;
 }
 
-/* end */
-
-
-/* footer */
+/* Footer styling */
 footer {
     background-color: #004080;
     color: #fff;
     padding: 2rem 0;
     text-align: center;
+    display: none;
 }
 
 .footer-content {
@@ -121,8 +137,3 @@ footer {
     text-align: left;
     padding-left: 2rem;
 }
-
-footer {
-    display: none;
-}
-/* end */
