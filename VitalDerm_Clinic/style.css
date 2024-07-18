@@ -69,11 +69,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    background-color: #ffffff;
+    background-color: #f1f1f1;
 }
 
 .intro-text {
     flex: 1;
+    text-align: center;
 }
 
 .intro-text h1 {
@@ -120,7 +121,7 @@ body {
 footer {
     background-color: #004080;
     color: #fff;
-    padding: 2rem 0;
+    padding: 1rem 0;
     text-align: center;
     display: none;
 }
