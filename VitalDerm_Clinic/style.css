@@ -90,9 +90,19 @@ body {
 .intro-image img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
+    outline: 2px solid #180076;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Services section styling */
+
+header {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    text-align: center;
+    text-decoration: underline;
+}
 .services-section {
     display: flex;
     justify-content: space-around;
@@ -106,7 +116,7 @@ body {
 
 .service-image {
     width: 100%;
-    height: auto;
+    height: 250px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -114,7 +124,8 @@ body {
 .service-text {
     margin-top: 10px;
     font-size: 16px;
-    color: #666;
+    color: #000000;
+    font-weight: bold;
 }
 
 /* Footer styling */
