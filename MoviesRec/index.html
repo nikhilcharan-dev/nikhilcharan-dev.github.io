@@ -6,19 +6,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Movie Recommendations</h1>
-    </header>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="" alt="Logo" />
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </nav>
 
-    <div class="container">
-        <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Search for a movie...">
-            <button id="generateBtn">Generate</button>
+    <main>
+        <header>
+            <h1 class="heading">Movie Recommendations</h1>
+        </header>
+
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for a movie...">
+                <button id="generateBtn">Generate</button>
+            </div>
+
+            <div id="recommendations" class="recommendations">
+                <!-- Movie cards will be displayed here -->
+            </div>
         </div>
-        <div id="recommendations" class="recommendations">
-            <!-- Movie cards will be displayed here -->
-        </div>
-    </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
