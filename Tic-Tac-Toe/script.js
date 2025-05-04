@@ -4,12 +4,17 @@ const playerScoreButton = document.querySelector('.playerScore');
 const aiScoreButton = document.querySelector('.aiScore');
 const resetButton = document.querySelector('.reset');
 
-let currentPlayer = 'X';
 let playerScore = 0;
 let aiScore = 0;
 let gameBoard = ['', '', '', '', '', '', '', '', ''];
 
 playerName.innerHTML = prompt('Your Name') || 'Player';
+let currentPlayer = prompt(`Choose 'X' or 'O'`) || 'X';
+while(currentPlayer.match(/[^XO]/)) {
+    alert('Invalid input! Please choose either X or O.');
+    currentPlayer = prompt(`Choose 'X' or 'O'`) || 'X';
+}
+let aiPlayer = currentPlayer === 'X' ? 'O' : 'X';
 
 const winPatterns = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8],
@@ -43,7 +48,7 @@ const updateBoard = (index) => {
             resetGame();
         } else {
             currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-            if (currentPlayer === 'O') {
+            if (currentPlayer === aiPlayer) {
                 aiMove();
             }
         }
@@ -95,7 +100,12 @@ resetButton.addEventListener('click', () => {
     board.forEach((button) => {
         button.innerHTML = '';
     });
-    currentPlayer = 'X';
+    currentPlayer = prompt(`Choose 'X' or 'O'`) || 'X';
+    while(currentPlayer.match(/[^XO]/)) {
+        alert('Invalid input! Please choose either X or O.');
+        currentPlayer = prompt(`Choose 'X' or 'O'`) || 'X';
+    }
+    aiPlayer = currentPlayer === 'X' ? 'O' : 'X';
     playerScore = 0;
     aiScore = 0;
     playerScoreButton.innerHTML = playerScore;
